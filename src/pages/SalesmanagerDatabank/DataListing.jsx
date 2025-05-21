@@ -110,9 +110,9 @@ const DataDisplay = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Chat on WhatsApp"
-                  style={{ marginLeft: "8px", display: "inline-flex", alignItems: "center" }}
+                  style={{ marginLeft: "15px", display: "inline-flex", alignItems: "center" }}
                 >
-                  <img src={whatsappIcon} alt="WhatsApp" style={{ width: 20, height: 20 }} />
+                  <img src={whatsappIcon} alt="WhatsApp" style={{ width: 30, height: 30 }} />
                 </a>
 
 
