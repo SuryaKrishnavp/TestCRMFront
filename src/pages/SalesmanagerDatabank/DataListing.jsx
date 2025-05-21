@@ -103,19 +103,19 @@ const DataDisplay = () => {
           <div className={styles.card}>
             {renderField("Name", data.name)}
             <div className={styles.phoneRow}>
-  <div>
-    <strong>Phone:</strong> {data.phonenumber}
-  </div>
-  <a
-    href={`https://wa.me/91${data.phonenumber}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className={styles.whatsappBtn}
-  >
-    <img src={whatsappIcon} alt="WhatsApp" className={styles.whatsappIcon} />
-    Chat with Client
-  </a>
-</div>
+            <div>
+              <strong>Phone:</strong> {data.phonenumber}
+            </div>
+            <a
+              href={`https://wa.me/91${data.phonenumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.whatsappBtn}
+            >
+              <img src={whatsappIcon} alt="WhatsApp" className={styles.whatsappIcon} />
+              Chat with Client
+            </a>
+          </div>
 
 
 

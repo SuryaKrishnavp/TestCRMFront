@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import styles from "./AdminDataDisplay.module.css";
 import AdminLayout from "../../../components/Layouts/AdminLayout";
 import { MdLocationOn } from "react-icons/md";
+import whatsappIcon from "../../../assets/WhatsApp.svg"
 
 const AdminDataDisplay = () => {
   const navigate = useNavigate();
@@ -100,7 +101,20 @@ const AdminDataDisplay = () => {
         ) : data ? (
           <div className={styles.card}>
   {data.name && <p><strong>Name:</strong> {data.name}</p>}
-  {data.phonenumber && <p><strong>Phone:</strong> {data.phonenumber}</p>}
+  <div className={styles.phoneRow}>
+              <div>
+                <strong>Phone:</strong> {data.phonenumber}
+              </div>
+              <a
+                href={`https://wa.me/91${data.phonenumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.whatsappBtn}
+              >
+                <img src={whatsappIcon} alt="WhatsApp" className={styles.whatsappIcon} />
+                Chat with Client
+              </a>
+            </div>
   {data.district && <p><strong>District:</strong> {data.district}</p>}
   {data.place && <p><strong>Place:</strong> {data.place}</p>}
   {data.address && <p><strong>Address:</strong> {data.address}</p>}
