@@ -1,0 +1,128 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .graphSelectContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .graphSelect {
+    
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tabContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .tab {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e5e7eb;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .tab:hover {
+    background-color: #d1d5db;
+    transform: translateY(-2px);
+  }
+  
+  .activeTab {
+    background: linear-gradient(90deg, #2563eb, #1e40af);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graphsContainer {
+    margin-top: 30px;
+    width: 100%;        /* Or you can also limit it to 95% or similar */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .graphCard {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;        /* ✅ Make the card narrower */
+    margin: 0 auto;
+  }
+  
+  .graphWrapper {
+    height: 350px;
+    width: 100%;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .graphSelectContainer {
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .graphSelect {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .tabContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(105px, 1fr)); /* ✅ Grid for better layout */
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+    
+      .tab {
+        width: 100%; /* ✅ Full width for mobile */
+        padding: 8px 10px;
+        font-size: 13px;
+      }
+    
+  
+    .graphWrapper {
+      height: 300px;
+    }
+    .graphCard{
+        width: 100%;
+    }
+  }
+  
