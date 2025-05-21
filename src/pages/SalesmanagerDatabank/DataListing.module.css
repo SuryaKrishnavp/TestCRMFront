@@ -247,6 +247,39 @@
     text-align: center;
     font-weight: 500;
   }
+
+  .phoneRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.whatsappBtn:hover {
+  background-color: #20b358;
+}
+
+.whatsappIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
   
   
   

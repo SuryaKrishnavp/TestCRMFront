@@ -102,22 +102,21 @@ const DataDisplay = () => {
         ) : data ? (
           <div className={styles.card}>
             {renderField("Name", data.name)}
-            {data.phonenumber && (
-              <p>
-                <strong>Phone:</strong> {data.phonenumber}{" "}
-                <a
-                  href={`https://wa.me/91${data.phonenumber}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Chat on WhatsApp"
-                  style={{ marginLeft: "15px", display: "inline-flex", alignItems: "center" }}
-                >
-                  <img src={whatsappIcon} alt="WhatsApp" style={{ width: 30, height: 30 }} />
-                </a>
+            <div className={styles.phoneRow}>
+  <div>
+    <strong>Phone:</strong> {data.phonenumber}
+  </div>
+  <a
+    href={`https://wa.me/91${data.phonenumber}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={styles.whatsappBtn}
+  >
+    <img src={whatsappIcon} alt="WhatsApp" className={styles.whatsappIcon} />
+    Chat with Client
+  </a>
+</div>
 
-
-              </p>
-            )}
 
 
             {renderField("District", data.district)}
