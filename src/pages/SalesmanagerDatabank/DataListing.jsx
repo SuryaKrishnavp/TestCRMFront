@@ -7,6 +7,7 @@ import UploadImageModal from "../../components/Modals/AddImageModal";
 import UpdateStageModal from "../../components/Modals/UpdateStage";
 import { AlignJustify } from "lucide-react";
 import { MessageCircle } from "lucide-react"; // or use a WhatsApp SVG/icon
+import { ReactComponent as WhatsAppIcon } from "../../assets/WhatsApp.svg";
 
 const DataDisplay = () => {
   const navigate = useNavigate();
@@ -110,12 +111,13 @@ const DataDisplay = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Chat on WhatsApp"
-                  style={{ marginLeft: "8px", color: "green", textDecoration: "none" }}
+                  style={{ marginLeft: "8px", display: "inline-flex", alignItems: "center" }}
                 >
-                  <MessageCircle size={20} />
+                  <WhatsAppIcon style={{ width: 20, height: 20 }} />
                 </a>
               </p>
             )}
+
 
             {renderField("District", data.district)}
             {renderField("Place", data.place)}
