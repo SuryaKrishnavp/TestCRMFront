@@ -112,16 +112,9 @@ const DataDisplay = () => {
                   title="Chat on WhatsApp"
                   style={{ marginLeft: "8px", display: "inline-flex", alignItems: "center" }}
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 448 512"
-                    fill="green"
-                  >
-                    <path d="..." />
-                  </svg>
+                  <img src={whatsappIcon} alt="WhatsApp" style={{ width: 20, height: 20 }} />
                 </a>
+
 
               </p>
             )}
