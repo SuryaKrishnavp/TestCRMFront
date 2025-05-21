@@ -6,8 +6,7 @@ import StaffLayout from "../../components/Layouts/SalesMLayout";
 import UploadImageModal from "../../components/Modals/AddImageModal";
 import UpdateStageModal from "../../components/Modals/UpdateStage";
 import { AlignJustify } from "lucide-react";
-import { MessageCircle } from "lucide-react"; // or use a WhatsApp SVG/icon
-import { ReactComponent as WhatsAppIcon } from "../../assets/WhatsApp.svg";
+import whatsappIcon from "../../assets/WhatsApp.svg";
 
 const DataDisplay = () => {
   const navigate = useNavigate();
@@ -113,8 +112,17 @@ const DataDisplay = () => {
                   title="Chat on WhatsApp"
                   style={{ marginLeft: "8px", display: "inline-flex", alignItems: "center" }}
                 >
-                  <WhatsAppIcon style={{ width: 20, height: 20 }} />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 448 512"
+                    fill="green"
+                  >
+                    <path d="..." />
+                  </svg>
                 </a>
+
               </p>
             )}
 
